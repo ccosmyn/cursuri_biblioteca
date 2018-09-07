@@ -1,0 +1,15 @@
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+/home/reea/.rvm/rubies/ruby-2.5.1-cursuri_biblioteca/bin/ruby -r ./siteconf20180719-25388-1iq9d5i.rb extconf.rb
+creating Makefile
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.so
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20180719-25388-idoxkd/bindex

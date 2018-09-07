@@ -1,0 +1,33 @@
+<h3>Books</h3>
+
+
+ <table style="width:100%">
+ 	<tr>
+ 	<th>	
+		<%= form_tag(books_path, method: :get) do %>
+		Search books <%= text_field_tag :title, params[:title] %>
+		<%= submit_tag "Search" %>
+		<% end %>
+    </th>
+</tr>
+</table>
+
+
+
+<%= button_to 'Add a new Book', new_book_url, method: :get %>
+<br>
+<br>
+<% @books.each do |book| %>
+  <div class="book_title" style="float:left;">
+    <%= book.title %>
+  </div>
+  <div class="actions" style="float:right;">
+    <%= link_to "Show", book_url(book) %>
+    <%= link_to "Edit", edit_book_url(book) %>
+    <%= link_to "Remove", book_url(book), method: :delete, data: { confirm: "Are you sure?" }  %>
+  </div>
+  <hr style="clear:both;">
+
+ 
+
+<% end %>

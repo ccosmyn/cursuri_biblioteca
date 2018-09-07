@@ -1,0 +1,58 @@
+<%= form_for @book do |form| %>
+  <table>
+    <tr>
+      <td>
+        <%= form.label :title %>
+      </td>
+      <td>
+        <%= form.text_field :title %>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <%= form.label :body %>
+      </td>
+      <td>
+        <%= form.text_area :body %>
+      </td>
+    </tr>
+
+<% if false %>
+    <%= form.select("category_ids[]", options_for_select(Category.all.collect { |cat| [cat.name, cat.id] }), {:multiple=>true, :size=>6})%>
+<% end %>    
+
+    <p> Select the category: </p>
+
+    <form action="/action_page.php">
+      <select name="Categories" multiple>
+        <option value="drama">Drama</option>
+        <option value="sci-fi">Sci-fi</option>
+        <option value="action">Action</option>
+        <option value="thriller">Thriller</option>
+      </select>
+      <input type="submit">
+    </form>
+
+    <p> Select the author: </p>
+
+    <form action="/action_page.php">
+      <select name="Authors" multiple>
+        <option value="rowling">J K Rowling</option>
+        <option value="king">Kerry Anne King</option>
+        <option value="atwood">Margaret Atwood</option>
+        <option value="patterson">James Patterson</option>
+      </select>
+      <input type="submit">
+    </form>
+
+    <p> Hold down the Ctrl (Windows) / Command (Mac) button to select multiple options. </>
+
+
+
+
+
+  </table>
+  <%= form.submit %>
+  <%= link_to 'Cancel', books_url, method: :get %>
+  
+  <% end %>

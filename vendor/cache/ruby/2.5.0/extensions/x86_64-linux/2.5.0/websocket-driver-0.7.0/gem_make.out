@@ -1,0 +1,15 @@
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/home/reea/.rvm/rubies/ruby-2.5.1-cursuri_biblioteca/bin/ruby -r ./siteconf20180719-25388-l80406.rb extconf.rb
+creating Makefile
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/reea/projects/rails/cursuri_biblioteca/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20180719-25388-bkfk3e
