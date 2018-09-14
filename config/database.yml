@@ -23,6 +23,13 @@ test:
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
-# production:
+production:
+  adapter: mysql2
+  host: localhost 
+  username: user1
+  password: User1
+  database: cursuri_biblioteca/development
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 #   <<: *default
 #   database: db/production.sqlite3
